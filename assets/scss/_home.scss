@@ -84,7 +84,55 @@
    }
   }
   .welcome-jumbo{
-    background: red;
-    
+    max-width: calc(100vw - 350px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(239,119,79); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(239,119,79,1) 0%, rgba(241,92,39,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(239,119,79,1) 0%,rgba(241,92,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(239,119,79,1) 0%,rgba(241,92,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+    overflow: hidden;
+    padding:100px;
+    .status{
+      display: inline-block;
+      padding: 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color:white;
+      background: black;
+      border-radius: 5px;
+      align-self: flex-start;
+      margin-bottom: 20px;
+      margin-top:100px;
+      
+    }
+    h1{
+      font-size: 3.5rem;
+      font-weight: 900;
+      align-self: flex-start;
+      color: white;
+      margin-bottom: 100px;
+    }
+
+    .chicken-waffles{
+      width:100%;
+      // max-width: 1200px;
+      // animation: moveUpandDown 1s linear infinite;
+      position: relative
+    }
+
+    // @keyframes moveUpandDown {
+    //   0%, 100%{
+    //     bottom:0;
+    //   }
+    //   50%{
+    //     bottom:30px;
+    //   }
+    // }
   }
 }
